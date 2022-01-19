@@ -1,0 +1,70 @@
+
+    *{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+    animation: mudarCor 4s infinite linear;
+    }
+
+    @keyframes mudarCor{
+
+    0%{ filter: hue-rotate(0deg);
+     }
+    100%{ filter: hue-rotate(160deg);
+     }
+    }
+
+    section h2{ 
+
+    color: #00ff0a;
+    font-size: 4rem;
+    text-align: center;
+    }
+
+    section .load{
+    position: inherit;
+    display: flex;
+    }
+
+    section .load .box{
+    position: inherit;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a, 
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
+    margin: 20px;
+    border-radius: 50%;
+    animation:animaBox 2s infinite linear;
+    animation-delay: calc(0.2s * var(--i));
+    }
+
+
+    @keyframes animaBox{
+        0%, 50%, 100%{
+        transform: scale(0.1);     
+        }
+
+        10% {
+        transform: scale(1);
+        }
+    }
+
+     
+
